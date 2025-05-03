@@ -1,54 +1,30 @@
-# Mood Recipes
+# My Website
 
-A simple web application that recommends recipes based on your current mood. Select how you're feeling, and get a recipe suggestion that matches your mood. Don't like the suggestion? You can request another recipe or change your mood.
+This is a [Next.js](https://nextjs.org/) project.
 
-## Features
+## Getting Started
 
-- Select from 8 different moods
-- Get personalized recipe recommendations
-- View recipe ingredients and instructions
-- Request alternative recipes for the same mood
-- Responsive design for mobile and desktop
+First, install the dependencies:
 
-## Tech Stack
+```bash
+npm install
+# or
+yarn install
+```
 
-- **Backend**: Express.js
-- **Database**: SQLite3
-- **Frontend**: HTML, CSS, JavaScript
-- **Styling**: Tailwind CSS
+Then, run the development server:
 
-## Installation
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-1. Make sure you have Node.js and npm installed
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-2. Clone this repository
-   ```
-   git clone <repository-url>
-   cd mood-recipes
-   ```
+## Learn More
 
-3. Install dependencies
-   ```
-   npm install
-   ```
+To learn more about Next.js, take a look at the following resources:
 
-4. Start the server
-   ```
-   npm start
-   ```
-
-5. Open your browser and navigate to `http://localhost:3000`
-
-## How It Works
-
-1. The app has a pre-populated SQLite database with recipes categorized by mood
-2. When you select a mood, a random recipe matching that mood is displayed
-3. You can request another recipe for the same mood or go back to select a different mood
-
-## Project Structure
-
-- `server.js` - Main Express server file
-- `database/recipes.db` - SQLite database with recipes
-- `views/index.ejs` - Main EJS template
-- `public/css/styles.css` - Custom styles
-- `public/js/main.js` - Frontend JavaScript 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial. 
