@@ -1,0 +1,40 @@
+/* Custom styles for mood buttons */
+.mood-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.mood-btn:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-2px);
+}
+
+.mood-btn.selected {
+  border-color: #6366f1;
+  background-color: #eef2ff;
+}
+
+/* Animation for recipe display */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#recipe-display:not(.hidden) {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  #recipe-display .flex-col {
+    gap: 2rem;
+  }
+} 
